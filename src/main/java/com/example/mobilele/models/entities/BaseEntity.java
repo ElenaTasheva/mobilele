@@ -1,5 +1,7 @@
-package com.example.mobilele.entities;
+package com.example.mobilele.models.entities;
 
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;
 import java.time.Instant;
@@ -12,6 +14,7 @@ public abstract class BaseEntity {
     protected Long id;
 
     @Column(nullable = false)
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "UTC")
     protected Instant created;
 
     @Column(nullable = false)

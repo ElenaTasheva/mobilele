@@ -1,20 +1,20 @@
-package com.example.mobilele.entities;
+package com.example.mobilele.models.entities;
 
 
-import com.example.mobilele.enums.Role;
+import com.example.mobilele.models.entities.enums.Role;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
 @Table(name = "user_roles")
 public class UserRole {
 
 
-    @EmbeddedId
-    private UserRolePK user_id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.ORDINAL)
     private Role role;
 
 

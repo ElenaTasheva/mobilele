@@ -1,8 +1,8 @@
-package com.example.mobilele.entities;
+package com.example.mobilele.models.entities;
 
 
-import com.example.mobilele.enums.Engine;
-import com.example.mobilele.enums.Transmission;
+import com.example.mobilele.models.entities.enums.Engine;
+import com.example.mobilele.models.entities.enums.Transmission;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

@@ -1,4 +1,4 @@
-package com.example.mobilele.entities;
+package com.example.mobilele.models.entities;
 
 
 import javax.persistence.Column;
