@@ -4,11 +4,21 @@ import com.example.mobilele.models.entities.enums.Category;
 
 public class ModelServiceModel {
 
+    private long id;
     private String name;
     private Category category;
     private String imageUrl;
     private int startYear;
     private Integer endYear;
+
+    public long getId() {
+        return id;
+    }
+
+    public ModelServiceModel setId(long id) {
+        this.id = id;
+        return this;
+    }
 
     public ModelServiceModel() {
     }

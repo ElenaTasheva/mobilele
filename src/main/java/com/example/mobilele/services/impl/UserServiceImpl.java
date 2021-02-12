@@ -63,7 +63,8 @@ public class UserServiceImpl implements UserService {
             return false;
         }
         else{
-            return passwordEncoder.matches(password,user.get().getPassword());
+          //  return passwordEncoder.matches(password,user.get().getPassword());
+            return  password.equals(user.get().getPassword());
         }
     }
 
@@ -79,8 +80,5 @@ public class UserServiceImpl implements UserService {
     }
 
 
-//    User user2 = new User().setUserName("eli")
-//            .setActive(true).setFirstName("Elina")
-//            .setLastName("Steing")
-//            .getUserRoles().add(userRoleRepository.findById(1));
+
 }

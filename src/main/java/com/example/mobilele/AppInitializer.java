@@ -46,8 +46,8 @@ public class AppInitializer implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
 //         brandService.seedData();
-//
-//
+////
+////
 //        initTT(this.brandService.getBrandByName("Audi"));
 //        initEQ7(this.brandService.getBrandByName("Audi"));
 //        initNC750S(this.brandService.getBrandByName("Honda"));

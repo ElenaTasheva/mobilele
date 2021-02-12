@@ -29,6 +29,17 @@ public abstract class BaseEntity {
         return this;
     }
 
+    @PrePersist
+    public void prePersist(){
+        setCreated(Instant.now());
+        setModified(Instant.now());
+    }
+
+    @PreUpdate
+    public void preUpdate(){
+        setModified(Instant.now());
+    }
+
     public Instant getCreated() {
         return created;
     }

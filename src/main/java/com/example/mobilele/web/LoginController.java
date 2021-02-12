@@ -29,7 +29,7 @@ public class LoginController {
     }
 
     @GetMapping("/users/login")
-    public String showLogin(){
+    public String showLogin(@ModelAttribute UserLoginServiceModel userModel){
         return "auth-login";
     }
 
